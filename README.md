@@ -1,4 +1,4 @@
-# add-text-to-markdown
+# add-text-to-markdown [![Build Status](https://travis-ci.org/azu/add-text-to-markdown.svg?branch=master)](https://travis-ci.org/azu/add-text-to-markdown)
 
 Add stdin text to exist markdown file.
 
