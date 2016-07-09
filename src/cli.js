@@ -14,7 +14,7 @@ const cli = meow(`
 
     Examples
       $ echo "text" | add-text-to-markdown README.md --section "section"
-      🌈 
+      
       # section
       text
 `, {

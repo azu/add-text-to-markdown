@@ -19,7 +19,7 @@ Install with [npm](https://www.npmjs.com/):
 
     Examples
       $ echo "text" | add-text-to-markdown README.md --section "section"
-      🌈 
+      
       # section
       text
 
