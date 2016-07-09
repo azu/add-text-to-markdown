@@ -11,10 +11,10 @@ Install with [npm](https://www.npmjs.com/):
 ## Usage
 
     Usage
-      $ echo "text" | add-text-to-markdown README.md --section "section name"
+      $ echo "text" | add-text-to-markdown path/to/file.md --section "section name"
 
     Options
-      --section  Section Name to insert text
+      --section  Markdown section name to insert text
       -w --write    re-write to file
 
     Examples
