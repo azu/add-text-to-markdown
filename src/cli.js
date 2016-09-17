@@ -2,6 +2,7 @@
 const meow = require('meow');
 const fs = require("fs");
 const path = require("path");
+const getStdin = require("get-stdin");
 import insert from "./insert";
 
 const cli = meow(`
@@ -35,8 +36,7 @@ if (!markdownFilePath || !cli.flags.section) {
     cli.showHelp();
 }
 const markdownContent = fs.readFileSync(markdownFilePath, "utf-8");
-process.stdin.pipe((buf) => {
-    const insertContent = buf.toString('utf8');
+getStdin().then(insertContent => {
     const rewriteContent = insert(markdownContent, insertContent, cli.flags.section);
     if (cli.flags.write) {
         fs.writeFileSync(markdownFilePath, rewriteContent, "utf-8");
