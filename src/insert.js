@@ -8,7 +8,7 @@ module.exports = function insert(content, insertContent, sectionName,
     {
         remarkParseOptions = {},
         remarkStringifyOptions = defaultRemarkStringifyOptions
-    }) {
+    } = {}) {
     const target = remark.parse(content);
     const newStuff = remark.parse(insertContent, remarkParseOptions);
     inject(sectionName, target, newStuff);
