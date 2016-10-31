@@ -16,7 +16,7 @@
     "lib/",
     "bin/"
   ],
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Add stdin text to exist markdown file.",
   "main": "lib/insert.js",
   "bin": {
